@@ -1,0 +1,80 @@
+body {
+    background-image: url("../images/background.jpg");
+    color: black;
+    font-family: 'Grandstander', cursive;
+}
+
+nav {
+    background: black;
+}
+
+main {
+    margin: 15px;
+    margin-inside: 10px;
+}
+
+code {
+    font-size: 26px;
+}
+
+footer {
+    width: 100%;
+    height: 75px;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.jumbotron {
+    background: rgba(169, 169, 169, 0.97);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.header {
+    width: 100%;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+
+.profile-image {
+    width: 75px;
+    height: 75px;
+}
+
+.block {
+    border-radius: 10px;
+    background: #cccccc;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.block h4 {
+    align-self: center;
+    justify-content: center;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.first-container {
+    margin-top: auto;
+}
+
+.link a {
+    color: black;
+    font-weight: bold;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
