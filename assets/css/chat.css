@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.chat {
+    width: 50%;
+    height: 80%;
+}
+
+.chat-window {
+    max-height: 90%;
+    min-height: 90%;
+    /*background-color: grey;*/
+    background-image: url("../images/chat3.jpg");
+    background-size: 100%;
+    padding: 10px;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.user-message {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    max-width: 40%;
+    width: fit-content;
+    /*align-self: flex-end;*/
+    margin-bottom: 5px;
+}
+
+.user-message .delete-symbol {
+    align-self: inherit;
+    font-size: 10px;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.user-message .delete-symbol:hover {
+    opacity: 100%;
+}
+
+.input-message form {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    /*background-color: black;*/
+    height: 10%;
+    /*flex-basis: 90% auto;*/
+
+}
+
+.text-message {
+    /*width: 85%;*/
+    flex-grow: 4;
+}
+
+.submit-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-buttons * {
+    cursor: pointer;
+}
+
+.button-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    /*width: auto;*/
+    align-self: flex-end;
+    /*cursor: pointer;*/
+}
+
+.send-button {
+    flex-grow: 3;
+}
+
+.calculate-button {
+    flex-wrap: wrap;
+    /*z-index: 123;*/
+
+}
+
+.dropdown-buttons {
+    /*flex-grow: 1;*/
+}
