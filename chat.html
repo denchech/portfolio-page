@@ -9,27 +9,18 @@
 <main>
     <div class="chat">
         <div class="chat-window">
-            <!--            <div class="user-message" style="align-self: flex-end;">-->
-            <!--                <div class="delete-symbol" onclick="deleteMessage(event)">-->
-            <!--                    &#10006;-->
-            <!--                </div>-->
-            <!--                Something-->
-            <!--            </div>-->
         </div>
-        <div class="input-message">
-            <form id="chatFrom">
-                <input id="message" type="text" class="text-message">
-                <div class="submit-buttons">
-                    <div class="button-container">
-                        <input class="send-button" type="submit" value="Send">
-                        <div class="dropdown-buttons">
-                            <button class="" type="button" onclick="dropdown()">▼</button>
-                        </div>
-                    </div>
-                    <input class="calculate-button" hidden type="button" value="Calculate" onclick="calculate()">
+        <form id="chatFrom" class="input-message">
+            <input id="message" type="text" class="text-message">
+            <div class="dropdown">
+                <input class="chat-button send-button" type="submit" value="Send">
+                <input class="chat-button dropdown-button" type="button" onclick="dropdown()" value="▼">
+                <div class="dropdown-content">
+                    <input class="chat-button calculate-button" hidden type="button" value="Calculate"
+                           onclick="calculate()">
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
     <script src="assets/js/chat.js"></script>
 </main>

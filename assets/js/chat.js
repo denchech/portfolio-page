@@ -1,6 +1,6 @@
-const ADJECTIVES = ['Красивый', 'Умный', 'Ебейший', 'Ахуенный'];
-const NOUNS = ['Фил', 'отец', 'еблан', 'хуй'];
-const VERBS = ['поехал', 'нашел', 'выебал', 'купил', 'зашел'];
+const ADJECTIVES = ['Красивый', 'Умный', 'Красный', 'Большой', 'Маленький'];
+const NOUNS = ['пес', 'стол', 'диван', 'чемодан', 'человек'];
+const VERBS = ['стоит', 'лежит', 'висит', 'находится', 'зашел'];
 
 Array.prototype.random = function () {
     return this[Math.floor((Math.random()*this.length))];
@@ -23,7 +23,7 @@ function calculate() {
     try {
         botMessageText = eval(expression);
     } catch (e) {
-        alert('Wrong expression');
+        sendMessage('Wrong expression');
 
         return;
     }
@@ -85,12 +85,19 @@ function sendMessage(botMessageText) {
 }
 
 function dropdown() {
-    calculateButton.hidden = false;
+    calculateButton.hidden = !calculateButton.hidden ?? calculateButton.hidden;
 }
 
 let chatWindow = document.querySelector('.chat-window');
 let chatForm = document.querySelector('#chatFrom');
 let messageValue = document.querySelector('#message');
 let calculateButton = document.querySelector('.calculate-button');
+let dropdownButton = document.querySelector('.dropdown-button');
+
+window.onclick = function (event) {
+    if (calculateButton.hidden === false && event.target !== dropdownButton) {
+        calculateButton.hidden = true;
+    }
+}
 
 chatForm.addEventListener('submit', send);
