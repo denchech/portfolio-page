@@ -1,0 +1,33 @@
+.disable {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    /*background-color: rgba(169, 169, 169, 0.8);*/
+    background-color: darkgrey;
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.contacts-container {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.contacts-container * {
+    visibility: visible;
+}
+
+.contacts {
+    height: auto;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}

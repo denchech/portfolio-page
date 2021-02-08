@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link href="assets/css/chat.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="chat">
+        <div class="chat-window">
+        </div>
+        <form id="chatFrom" class="input-message">
+            <input id="message" type="text" class="text-message">
+            <div class="dropdown">
+                <input class="chat-button send-button" type="submit" value="Send">
+                <input class="chat-button dropdown-button" type="button" onclick="dropdown()" value="▼">
+                <div class="dropdown-content">
+                    <input class="chat-button calculate-button" hidden type="button" value="Calculate"
+                           onclick="calculate()">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/chat.js"></script>
+</main>
+</body>
+</html>

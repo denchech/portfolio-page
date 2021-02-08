@@ -27,6 +27,10 @@ footer {
     flex-direction: column;
 }
 
+.nav-link {
+    cursor: pointer;
+}
+
 .jumbotron {
     background: rgba(169, 169, 169, 0.97);
     margin-top: 10px;
@@ -43,6 +47,8 @@ footer {
 .profile-image {
     width: 75px;
     height: 75px;
+    cursor: pointer;
+    margin: 5px 15px 5px 10px;
 }
 
 .block {

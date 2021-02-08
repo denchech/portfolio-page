@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="assets/css/index.css" rel="stylesheet">
+    <link href="assets/css/popup.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="disable" style="display: none;" onclick="showPopup()"></div>
+<div class="contacts-container" style="display: none;">
+    <div class="contacts">
+        <b>Email</b>: somemail@mail.com<br>
+        <b>Vk</b>: vk.com/somevk<br>
+        <b>Telegram</b>: @sometelegram
+    </div>
+</div>
+<script src="assets/js/popup.js"></script>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark header">
-        <a href="index.html" class="navbar-brand" style="margin-left: 10px">
-            <img class="profile-image" src="assets/images/me.png" alt="profile"/>
-        </a>
+        <img class="profile-image" src="assets/images/profile/me.png" alt="profile" onclick="changePhoto()"/>
+        <img class="profile-image" src="assets/images/profile/me2.png" style="display: none;" alt="profile" onclick="changePhoto()"/>
+        <img class="profile-image" src="assets/images/profile/me3.png" alt="profile" style="display: none;" onclick="changePhoto()"/>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -26,6 +36,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#additional">Дополнительно</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showPopup()">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chat.html">Чат</a>
                 </li>
             </ul>
         </div>
@@ -149,12 +165,13 @@ if (true) {
         </span>
     </span>
     <span>
-        <q>Я ничего не понимаю</q>
+        <q>Ничего не понимаю</q>
         -
         <cite>худ. фильм Левиафан</cite>
     </span>
 
 </footer>
-
+<script src="assets/js/profile.js"></script>
+<!--<script src="assets/js/tag-collector.js"></script>-->
 </body>
 </html>
